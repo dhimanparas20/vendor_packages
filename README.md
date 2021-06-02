@@ -5,7 +5,7 @@
 <p align="center">
 <img src="https://github.com/dhimanparas20/buildbot/blob/main/mst.jpg" />
 
-## cloning or calling  
+## cloning or syncing the repo
 So basically there are 2 ways of how you can use this repo for the same purpose  .
 > 1: Clone this repo to the vendor of the rom source, but you have to do this everytime you build a different rom.
 ```sh

@@ -19,11 +19,21 @@ LOCAL_PATH := $(call my-dir)
 # Include Makefiles from all sub-directories
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Include Prebuilt_Apps
-include $(LOCAL_PATH)/prebuilts/Prebuilts.mk)
+# Prebuilt
+PRODUCT_PACKAGES += \
+    PrebuiltGoogleSounds \
+    GCam \
+    Gboard \
+    AsusCalculator
 
-# Include Removable_Packages
-include $(LOCAL_PATH)/RemovePackages/Remove.mk)
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
-# Include shday_launcher
-include $(LOCAL_PATH)/shadylauncher/Prebuilts.mk
+# Copy permission files
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/shadylauncher/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
+
+# Shady Launcher
+PRODUCT_PACKAGES += \
+    ShadyQuickStep \
+    ShadyRecentsProvider

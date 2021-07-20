@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     RemovePackages
 
 # Copy permission files
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/shadylauncher/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/packages/shadylauncher/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
 
 # Shady Launcher
 PRODUCT_PACKAGES += \

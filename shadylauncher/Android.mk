@@ -8,7 +8,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep NexusLauncherRelease OnePlusRecentsProvider OPLauncher 
+LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep NexusLauncherRelease OnePlusRecentsProvider OPLauncher lawnchair Lawnchair
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
